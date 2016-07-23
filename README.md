@@ -1,0 +1,1 @@
+android activity跳转动画设置，带有多种跳转效果
