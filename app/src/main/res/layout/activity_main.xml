@@ -3,6 +3,13 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
+    <Button
+        android:id="@+id/style_set"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:text="通过style设置跳转动画"/>
+
     <ListView
         android:id="@+id/listView1"
         android:layout_width="match_parent"

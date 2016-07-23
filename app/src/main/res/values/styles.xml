@@ -8,4 +8,30 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+
+    <style name="MyTheme" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">true</item> <!-- 设置没有标题 -->
+        <item name="android:textSize">20sp</item>   <!-- 设置文本大小 -->
+        <item name="android:textColor">#F34141</item>
+        <item name="android:background">@android:color/background_light</item>
+        <!-- 设置activity切换动画 -->
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+    </style>
+
+
+
+    <!--再次设置activity跳转的 animation 样式 -->
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <!--这两个是进入时候-->
+    <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+    <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <!--这两个是是进入后 返回到上级页面的动画；
+        通过overridePendingTransition这种方式不知道如何实现该功能-->
+    <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+    <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+
+    </style>
+
+
 </resources>
